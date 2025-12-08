@@ -1,0 +1,64 @@
+<head>
+<html lang="fr">
+ <meta charset="UTF-8">
+  <title>Tendresse générée</title>
+  <link rel="icon" href="../logo.png">
+   <link rel="stylesheet" href="../fashion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="card">
+    <img src="../images/image44.jpg" alt=""> 
+    <div class="text">Les cartes postales perdues</div>
+    <div class="bouton">
+        <a href="../index.html" class="Home"> Accueil </a>
+    </div>
+</div>
+
+<p class="context">Le numérique compose le squelette de ce projet, et la création générée constitue le sujet de mon mémore de recherche. Ainsi, cette page est réalisée uniquement par Chat.GPT, sans qu'aucune condition ne lui soit donnée.</p>
+
+<p class="règle">De la tendresse générée.</p>
+
+<div class="gallery2">
+  <div class="item2">
+    <img src="../images/images5/lettre1.jpg" alt="L'Ange déchu, Alexandre Cabanel">
+  </div>
+
+  <div class="item2">
+    <img src="../images/images5/lettre2.jpg" alt="Peinture 2">
+  </div>
+  
+    <div class="item2">
+    <img src="../images/images5/lettre3.jpg" alt="Peinture 3">
+  </div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var images = document.querySelectorAll(".gallery2 .item2 img");
+
+images.forEach(function(img) {
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>

@@ -1,0 +1,101 @@
+<head>
+<html lang="fr">
+ <meta charset="UTF-8">
+  <title>Poésie générée</title>
+  <link rel="icon" href="../logo.png">
+   <link rel="stylesheet" href="../fashion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="card">
+  <img src="../images/image11.jpg" alt="44min31">
+  <div class="text">Fight Club</div>
+  <div class="bouton"> <a href="../index.html" class="Home"> Accueil </a> </div>
+</div>
+
+<p class="context">Dans la scène où est extraite cette image, le Narrateur énonce la première règle du Fight Club : il est interdit de parler du Fight Club. Face à ce contexte, l'IA devait composer un poème dans un style poétique, proche de celui d'un humain.</p>
+
+<p class="règle"> Quel poème est généré par IA ?</p>
+
+<div class="tableau">
+  <div class="colonne">
+
+<h2> <i> La signature invisible </i> </h2>
+<p> Dans ce regard perdu derrière des lunettes sombres,
+<br>
+on devine un homme qui n’habite plus vraiment sa vie.
+<br>
+Assis dans un restaurant banal,
+<br>
+il porte sur la peau la signature invisible de la nuit passée :
+<br>
+un monde secret où les coups remplacent les mots.
+<br>
+<br>
+Il voudrait dire à ce serveur qu’il a bien combattu hier,
+<br>
+qu’il a vu la danse brutale de deux existences qui cherchent à sentir quelque chose,
+<br>
+mais dehors, dans la lumière normale des jours,
+<br>
+ceux qui hurlent dans la cave deviennent étrangers à eux-mêmes.
+<br>
+<br>
+Alors il se tait,
+<br>
+car la première règle n’a jamais parlé de silence —
+<br>
+elle parle de survivre à ce que l’on devient.</p>
+<button class="quiz1" onclick="checkAnswer(false)">Ce texte est généré </button>
+  </div>
+
+  <div class="colonne">
+  <h2> <i> Sous les lunettes </i> </h2>
+<p> 
+Ce n’est pas toi, ce n’est pas nous. 
+<br>
+Nous ne sommes plus les mêmes qu’hier, 
+<br>
+Mais tes yeux sont similaires, 
+<br>
+Je les reconnais, même après le contrecoup. 
+<br>
+<br>
+L’on n’en parle pas.
+<br>
+Mais je sais que tu jubiles, 
+<br>
+Je le sens, tu es comme moi. 
+<br>
+Toi aussi, tu te sentais inutile. 
+<br>
+<br>
+L’on n’en parle pas. 
+<br>
+Mais tu t’es bien battu,
+<br>
+Ici, tu n’es qu’un misérable appât. 
+<br>
+et je suis le canal biliaire irrité de Jack.
+<br></p>
+ <button class="quiz1" onclick="checkAnswer(true)">Ce texte est généré</button>
+  </div>
+</div>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer(clique) {
+  if(clique) {
+    document.getElementById("result").innerHTML = "❌ Ooops... ce texte est bien écrit par un humain !";
+  } else {
+    document.getElementById("result").innerHTML = "✅ Bravo ! Ce texte est généré par Chat.GPT !";
+  }
+}
+</script>
+
+</body>

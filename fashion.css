@@ -1,0 +1,378 @@
+/* Commun à toutes les pages */
+.card img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+border-radius: 15px;
+}
+
+.card {
+padding-top: 20px;
+overflow: hidden;
+position: relative;
+}
+
+.text {
+position: absolute;
+text-align: center;
+font-family: "Open Sans", sans-serif;
+font-size: 25px;
+font-weight: bold;
+top: 45%;
+right: 15%;
+color: white;
+width: 70%;
+}
+
+.Home {
+display: inline-block;
+background-color: #f0f0f0;
+padding: 10px 18px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+font-family: "Open Sans", sans-serif;
+font-size: 10px;
+}
+
+.Home:hover {
+background-color: #e2dfdf;
+}
+
+.bouton {
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+}
+
+.context { 
+font-family: "Open Sans", sans-serif;
+margin-right: 200px;
+margin-left: 200px;
+font-size: 17px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.règle {
+text-align: center;
+font-weight: bold;
+font-family: "Open Sans", sans-serif;
+font-size: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+/* Page 1.html */
+.tableau {
+display: flex; 
+border-radius: 15px;
+overflow: hidden;
+}
+
+.colonne {
+flex: 1;
+padding: 20px;
+height: 700px;
+}
+
+.colonne:first-child {
+border-right: 1px groove #000; 
+}
+
+.colonne:hover {
+background-color: #b7b3ae;
+}
+
+h2 {
+font-family: "Open Sans", sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+p {
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+font-size: 20px;
+text-align: center
+}
+
+.quiz1 {
+display: block;
+margin: 10px auto;
+background-color: #cfcdc9;
+color: black;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.quiz1:hover {
+background-color: #e7e6e4;
+}
+
+#result {
+text-align: center;
+font-size: 18px;
+margin-top: 15px;
+}
+
+/* Page 2 et page 3.HTML */
+.gallery2 img {
+width: 100%;
+margin-bottom: 15px;
+border-radius: 12px;
+display: block;
+break-inside: avoid;
+transition: 0.3s;
+}
+
+.gallery2 img:hover {
+filter: brightness(60%);
+}
+
+.gallery2 {
+column-count: 3;
+column-gap: 15px;
+padding: 15px;
+}
+
+.item2 {
+position: relative;
+margin-bottom: 15px;
+break-inside: avoid;
+display: block;
+overflow: hidden;
+border-radius: 12px;
+}
+
+.item2 img {
+width: 100%;
+display: block;
+transition: 0.3s;
+}
+
+.item2:hover img {
+filter: brightness(60%);
+}
+
+#myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+display: none;
+position: fixed;
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+margin: auto;
+border-radius: 20px;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+#caption { 
+margin: auto; 
+display: block; 
+width: 80%; 
+max-width: 700px; 
+text-align: center; 
+color: #ccc; 
+padding: 10px 0; 
+height: 150px; 
+}
+
+.modal-content {  
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)} 
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Page 3.html */
+.Daenerys p:not(.context):not(.règle):not(.text):not(.Home) {
+margin-right: 400px;
+margin-left: 400px;
+font-size: 20px;
+text-align: justify;
+}
+
+
+/* Page 5 et Page 6.HTML */
+.gallery img {
+width: 100%;
+margin-bottom: 15px;
+border-radius: 12px;
+display: block;
+break-inside: avoid;
+transition: 0.3s;
+}
+
+.gallery img:hover {
+filter: brightness(60%);
+}
+
+.gallery {
+column-count: 4;
+column-gap: 15px;
+padding: 15px;
+}
+
+.item {
+position: relative;
+margin-bottom: 15px;
+break-inside: avoid;
+display: block;
+overflow: hidden;
+border-radius: 12px;
+}
+
+.item img {
+width: 100%;
+display: block;
+transition: 0.3s;
+}
+
+.item:hover img {
+filter: brightness(60%);
+}
+
+.item p {
+position: absolute;
+top: 50%;
+left: 58%;
+width: 80%;	
+transform: translate(-50%, -50%); 
+margin: 0;
+color: white;
+opacity: 0;
+box-sizing: border-box;
+text-align: justify;
+transition: opacity 0.3s ease;
+word-wrap: break-word;
+line-height: 2;
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-align: justify;
+}
+
+.item:hover p {
+opacity: 1;
+}
+
+/*Page Carnet de notes.HTML*/
+.jour p {
+  text-align: justify;
+}
+
+.jour {
+background-color: #233d5c;
+color: white;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 12px;
+font-size: 17px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.jour2 p {
+  text-align: justify;
+}
+
+.jour2 {
+background-color: #233d5c;
+color: white;
+padding: 30px;
+margin-bottom: 30px;
+margin-top: -40px;
+border-radius: 12px;
+font-size: 17px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.explorer {
+display: block;
+margin: 0 auto;
+width: 992px;
+margin-top: -65px;
+border: 3px solid #233d5c; 
+}
+
+.lien {
+color: #386194;
+}
+
+.lien:hover {
+text-decoration: none;
+color: #6b94c7;
+}
+
+#open {
+color: #386194
+}
+
+#open:hover {
+color: #6b94c7;
+text-decoration: none;
+}
+
+#open2 {
+color: #386194
+}
+
+#open2:hover {
+color: #6b94c7;
+text-decoration: none;
+}
